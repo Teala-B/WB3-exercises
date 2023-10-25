@@ -30,14 +30,14 @@ function displayReceipt(totalDue, amountPaid) {
         console.log(message);
     }
     
-   else if (changeDue < 0) {
+   else if (changeDue <= 0) {
         let amountDue = changeDue * -1
         let message = "The change back is $" + amountDue
         console.log(message);
 
     }
 }
-let totalDue = 30
+let totalDue = 5
 let amountPaid = 20
 
 displayReceipt(totalDue, amountPaid)
